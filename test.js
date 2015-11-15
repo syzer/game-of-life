@@ -26,11 +26,7 @@ tape('board with 4 cells', function (t) {
         [0, 0], [0, 1], [1, 0], [1,1]
     ];
 
-    var expected = [
-        [0, 0], [0, 1], [1, 0], [1,1]
-    ];
-
-    t.same(gol.nextState(initialCells), expected);
+    t.same(gol.nextState(initialCells), initialCells);
     t.end();
 });
 
